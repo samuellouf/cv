@@ -1,0 +1,85 @@
+:root{
+  --theme: #000096;
+  --padding: 40px;
+}
+
+body{
+  min-height: 100%;
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  padding: var(--padding);
+  border-top: 10px solid var(--theme);
+  line-height: 1.25;
+}
+
+#header{
+  display: flex;
+}
+
+#header img:first-of-type{
+  height: 64px;
+}
+
+#header h1:first-of-type{
+  font-size: 64px;
+  margin: 0;
+  margin-left: 20px;
+}
+
+#header td{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+#header tr{
+  display: flex;
+}
+
+#header a{
+  color: black;
+}
+
+#header a:not(:hover){
+  text-decoration: none;
+}
+
+.icon{
+  width: 28px;
+  height: 28px;
+  background-size: 28px;
+  color: transparent;
+  background-repeat: no-repeat;
+}
+
+.icon.icon-url {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyNi45MDg4MiIgaGVpZ2h0PSIyOC4xMzUxOCIgdmlld0JveD0iMCwwLDI2LjkwODgyLDI4LjEzNTE4Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjI2LjU0NTU5LC0xNjUuOTMyNDEpIj48ZyBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiPjxwYXRoIGQ9Ik0yNTIuNzA0NDEsMTc5Ljk2MDc5YzAsNy4wMjMwNyAtNS42ODc5NiwxMi43MTYzOSAtMTIuNzA0NDEsMTIuNzE2MzljLTcuMDE2NDUsMCAtMTIuNzA0NDEsLTUuNjkzMzIgLTEyLjcwNDQxLC0xMi43MTYzOWMwLC03LjAyMzA3IDUuNjg3OTYsLTEyLjcxNjM5IDEyLjcwNDQxLC0xMi43MTYzOWM3LjAxNjQ1LDAgMTIuNzA0NDEsNS42OTMzMiAxMi43MDQ0MSwxMi43MTYzOXoiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTIyNy44MDQ5OCwxODAuMjI3NjJoMjQuMzU4NzEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yNDAuMDk4MTYsMTkzLjMxNzU5YzAsMCAtNi42NTgxNSwtMi45ODc0IC02LjQzMzM4LC0xMy4zMTM3OWMwLjI1MDg3LC0xMS41MjU0NSA2LjA5MTkxLC0xMi4yOTcwMSA2LjA5MTkxLC0xMi4yOTcwMWwwLjExMzgzLC0wLjY4Mjk1IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjQwLjE3MDc0LDE5My4xMDc2N2MwLDAgNS45NDY5OCwtMi4xODYyOSA2LjE5OTUzLC0xMi4xOTI2OWMwLjMxMzM2LC0xMi40MTU1OCAtNi41NDEwMSwtMTMuNDE4MTEgLTYuNTQxMDEsLTEzLjQxODExbDAuMTEzODMsLTAuNjgyOTUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yNDAuNjA4MzcsMTkyLjk3NjE3bC0wLjM0MTQ4LC0yNS42MTA4bDAuMTEzODMsLTAuNjgyOTUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjEzLjQ1NDQwODAwNzU2ODc1OToxNC4wNjc1ODg5NjI5OTEwOTYtLT4=")
+}
+
+.icon.icon-github {
+  background-image: url("https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png");
+}
+
+h3.title {
+  font-weight: bold;
+  color: var(--theme);
+}
+
+#projects ul li b, #skills ul li b{
+  font-weight: bold;
+  color: hsl(from var(--theme) h s 70%);
+}
+
+#projects ul li a{
+  text-decoration: underline hsl(from var(--theme) h s 70%);
+}
+
+#projects ul li a:not(:hover){
+  text-decoration: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
