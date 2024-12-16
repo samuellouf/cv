@@ -14,18 +14,27 @@ body{
   line-height: 1.25;
 }
 
-#header{
+body:not(.mobile) #header{
   display: flex;
 }
 
-#header img:first-of-type{
+.profile{
+  display: flex;
+  align-items: center;
+}
+
+#header .profile img:first-of-type{
   height: 64px;
 }
 
-#header h1:first-of-type{
+#header .profile h1:first-of-type{
   font-size: 64px;
   margin: 0;
   margin-left: 20px;
+}
+
+body.mobile #header .profile h1:first-of-type{
+  font-size: 32px;
 }
 
 #header td{
